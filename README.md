@@ -121,7 +121,9 @@ def calculate_baseline_loss(rewards,R,L):
     sqrtL = np.sqrt(L)
     constant_a = 1.0-(R * original_mean)/ ((L-1)*sqrtV*sqrtL)
     constant_b = REG_CONTROLLER / (2*(L-1)*sqrtV*sqrtL)
-    constant_c = (REG_CONTROLLER*sqrtV)/(2*sqrtL) + (REG_CONTROLLER*sqrtL*original_mean*original_mean)/(2*(L-1)*sqrtV)
+    constant_c = ((REG_CONTROLLER*sqrtV)/(2*sqrtL) 
+        + (REG_CONTROLLER*sqrtL*original_mean*original_mean)
+        /(2*(L-1)*sqrtV))
 
     baseline = constant_a*original_mean + constant_b*original_reward_sq_sum + constant_c
 
