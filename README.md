@@ -1,6 +1,6 @@
 # TIL_TR1
 
-## 1. [clean_dataset.py](clean_dataset.py)
+## 1. [clean_dataset.py](https://github.com/HimanshuMittal01/ctr-optimization/blob/master/clean_dataset.py)
 
 ### Objective : Clean the dataset, drop rows, handle duplicates and missing values
 
@@ -8,7 +8,7 @@
 
 Remove rows having 0 impressions
 
-## 2. [feature_selector.py](feature_selector.py)
+## 2. [feature_selector.py](https://github.com/HimanshuMittal01/ctr-optimization/blob/master/feature_selector.py)
 
 ### Objective : Select and generate features from the cleaned dataset
 
@@ -57,7 +57,7 @@ Remove rows having 0 impressions
     -   key_value
     -   months
 
-## 3. [feature_transformation.py](feature_transformation.py)
+## 3. [feature_transformation.py](https://github.com/HimanshuMittal01/ctr-optimization/blob/master/feature_transformation.py)
 
 ### Objective : Transform features for better predictions and prepare data for splits
 
@@ -73,7 +73,7 @@ Remove rows having 0 impressions
 
 Next, we use lambdas to apply aggregate to the data grouped by Order_ID
 
-## 4. [create_trajectories.py](create_trajectories.py)
+## 4. [create_trajectories.py](https://github.com/HimanshuMittal01/ctr-optimization/blob/master/create_trajectories.py)
 
 ### Objective : Create trajectory given data state, action, and reward
 
@@ -88,7 +88,7 @@ Next, we use lambdas to apply aggregate to the data grouped by Order_ID
 
 We also tried logistic regression and SVM but they were not approximating the given distribution well enough.
 
-## 5. [make_splits.py](make_splits.py)
+## 5. [make_splits.py](https://github.com/HimanshuMittal01/ctr-optimization/blob/master/make_splits.py)
 
 - Dev-F Shape      : (4, 11222)     3.2664 %
 - Test-F Shape     : (4, 11225)     3.2673 %
@@ -100,7 +100,7 @@ We also tried logistic regression and SVM but they were not approximating the gi
 Train-PO, Train-RP, Dev-F, Test-F has same distribution, and dev-l, test-l consists of last month data and hance got different distribution
 ### Splitting Data
 
-## 6. [experiment.py](experiment.py)
+## 6. [experiment.py](https://github.com/HimanshuMittal01/ctr-optimization/blob/master/experiment.py)
 
 ### Objective: Policiy Network train
 
@@ -141,6 +141,6 @@ Batchwise training to reduce the crm loss on the policy_model
 
 `estimator`: A sampling split to calculate RF2 and MAE and verify ctr prediction
 
-### 8. [recommend_sets.py](recommend_sets.py)
+### 8. [recommend_sets.py](https://github.com/HimanshuMittal01/ctr-optimization/blob/master/recommend_sets.py)
 
 ### Final Script. Takes input and gives output of recommended buckets.
